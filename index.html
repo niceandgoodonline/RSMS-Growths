@@ -3,71 +3,80 @@
   <head>
     <meta charset="utf-8">
     <title>Romancing SaGa Minstrel Song Growths</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="growth.css">
   </head>
   <body>
-    <header></header>
+    <header>
+      <a href="../index.html">Home</a>
+    </header>
     <main>
       <div class="dropdown">
         <button onclick="toggleActionsDropdown()" class="dropbtn">Select Action</button>
         <div id="actionsDropdown" class="dropdown-content">
-          <div onclick="loadAction(this)">Foil</div>
-          <div onclick="loadAction(this)">Short Sword</div>
-          <div onclick="loadAction(this)">Long Sword</div>
-          <div onclick="loadAction(this)">Great Sword</div>
-          <div onclick="loadAction(this)">Scimitar</div>
-          <div onclick="loadAction(this)">Hand Axe</div>
-          <div onclick="loadAction(this)">Club</div>
-          <div onclick="loadAction(this)">2-Handed Sword</div>
-          <div onclick="loadAction(this)">Katana</div>
-          <div onclick="loadAction(this)">2-Handed Axe</div>
-          <div onclick="loadAction(this)">Staff</div>
-          <div onclick="loadAction(this)">Polearm</div>
-          <div onclick="loadAction(this)">Spear</div>
-          <div onclick="loadAction(this)">Bow</div>
-          <div onclick="loadAction(this)">Martial Arts</div>
-          <div onclick="loadAction(this)">Martial Arts (Throw)</div>
-          <div onclick="loadAction(this)">Pyrology</div>
-          <div onclick="loadAction(this)">Hydrology</div>
-          <div onclick="loadAction(this)">Aerology</div>
-          <div onclick="loadAction(this)">Terrology</div>
-          <div onclick="loadAction(this)">Illusions</div>
-          <div onclick="loadAction(this)">Demonology</div>
-          <div onclick="loadAction(this)">Cosmology</div>
-          <div onclick="loadAction(this)">Sorcery</div>
-          <div onclick="loadAction(this)">Bewitchery</div>
-          <div onclick="loadAction(this)">Necromancy</div>
+          <div class="selectGrowth" onclick="loadAction(this)">None</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Foil</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Short Sword</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Long Sword</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Great Sword</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Scimitar</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Hand Axe</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Club</div>
+          <div class="selectGrowth" onclick="loadAction(this)">2-Handed Sword</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Katana</div>
+          <div class="selectGrowth" onclick="loadAction(this)">2-Handed Axe</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Staff</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Polearm</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Spear</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Bow</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Martial Arts</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Pyrology</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Hydrology</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Aerology</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Terrology</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Illusions</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Demonology</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Cosmology</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Sorcery</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Bewitchery</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Necromancy</div>
+          <div class="selectGrowth" onclick="loadAction(this)">Illegal Charm/Confuse Fallback</div>
         </div>
         <button onclick="toggleCharactersDropdown()" class="dropbtn">Select Character</button>
         <div id="charactersDropdown" class="dropdown-content">
+          <div onclick="loadCharacter(this)">None</div>
+          <div onclick="loadCharacter(this)">Aisha</div>
           <div onclick="loadCharacter(this)">Albert</div>
-          <div onclick="loadCharacter(this)">Jamil</div>
+          <div onclick="loadCharacter(this)">Barbara</div>
+          <div onclick="loadCharacter(this)">Claudia</div>
           <div onclick="loadCharacter(this)">Gray</div>
           <div onclick="loadCharacter(this)">Hawke</div>
-          <div onclick="loadCharacter(this)">Aisha</div>
-          <div onclick="loadCharacter(this)">Claudia</div>
-          <div onclick="loadCharacter(this)">Barbara</div>
+          <div onclick="loadCharacter(this)">Jamil</div>
           <div onclick="loadCharacter(this)">Sif</div>
-          <div onclick="loadCharacter(this)">Neidhart</div>
-          <div onclick="loadCharacter(this)">Darque</div>
-          <div onclick="loadCharacter(this)">Dowd</div>
-          <div onclick="loadCharacter(this)">Galahad</div>
-          <div onclick="loadCharacter(this)">Gian</div>
-          <div onclick="loadCharacter(this)">Raphael</div>
-          <div onclick="loadCharacter(this)">Theodore</div>
-          <div onclick="loadCharacter(this)">Herman</div>
-          <div onclick="loadCharacter(this)">Guella Ha</div>
-          <div onclick="loadCharacter(this)">Red Mage</div>
-          <div onclick="loadCharacter(this)">The Minstrel</div>
-          <div onclick="loadCharacter(this)">Diana</div>
-          <div onclick="loadCharacter(this)">Myriam</div>
-          <div onclick="loadCharacter(this)">Frielei</div>
-          <div onclick="loadCharacter(this)">Brau</div>
-          <div onclick="loadCharacter(this)">Sylvan</div>
+          <div onclick="loadCharacter(this)">Aldora</div>
           <div onclick="loadCharacter(this)">Captain Silver</div>
+          <div onclick="loadCharacter(this)">Darque</div>
+          <div onclick="loadCharacter(this)">Diana</div>
+          <div onclick="loadCharacter(this)">Dowd</div>
           <div onclick="loadCharacter(this)">Dragon Knight</div>
           <div onclick="loadCharacter(this)">Farah</div>
+          <div onclick="loadCharacter(this)">Flammar</div>
+          <div onclick="loadCharacter(this)">Frielei</div>
+          <div onclick="loadCharacter(this)">Galahad</div>
+          <div onclick="loadCharacter(this)">Gian</div>
+          <div onclick="loadCharacter(this)">Guella Ha</div>
+          <div onclick="loadCharacter(this)">Herman</div>
+          <div onclick="loadCharacter(this)">Marina</div>
+          <div onclick="loadCharacter(this)">The Minstrel</div>
+          <div onclick="loadCharacter(this)">Monica</div>
+          <div onclick="loadCharacter(this)">Myriam</div>
+          <div onclick="loadCharacter(this)">Neidhart</div>
           <div onclick="loadCharacter(this)">Patrick</div>
+          <div onclick="loadCharacter(this)">Raphael</div>
+          <div onclick="loadCharacter(this)">Schiele</div>
+          <div onclick="loadCharacter(this)">Brau</div>
+          <div onclick="loadCharacter(this)">Red Mage</div>
+          <div onclick="loadCharacter(this)">Sylvan</div>
+          <div onclick="loadCharacter(this)">Theodore</div>
           <div onclick="loadCharacter(this)">Mercenary (all)</div>
         </div>
 
@@ -135,5 +144,5 @@
     </main>
     <footer></footer>
   </body>
-  <script src="./main.js" defer></script>
+  <script src="./growth.js" defer></script>
 </html>
